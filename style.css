@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D9E6F7;
+    background: #e8eefa;
+    color: #4B4B4B;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #262626;
+    font-family: "Heebo", system-ui;
+}
+
+a {
+    color: #ED2590;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d32381;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.row--center {
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Optional responsive design for columns */
+@media (min-width: 768px) {
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-2 {
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+}
+
+.head {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.head-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;   
+    font-weight: bold;
+}
+
+.head-nav > li {
+    margin-right: 10px;
+}
+
+.head-nav > li > a {
+    text-decoration: none;
+    color: #6B6B6B;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.head-nav > li > a:hover {
+    color: #ED2590;        
+}
+
+.head-nav > li > a.active {
+    color: #ED2590;        
+}
+
+.head-logo {
+    color: #ED2590;
+    text-decoration: none;
+}
+
+.head-logo__img {
+    display: block;
+    height: 35px;
+}
+
+.search-input {
+    background: #EFF3F8;
+    border: none;
+    border-radius: 10px;
+    color: #4B4B4B;
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.head-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head-media__img {
+    display: block;
+    margin: 0 5px 0 8px;
+    height: 35px;
+    object-fit: cover;
+    width: 35px;
+}
+
+.head-media__body {
+    line-height: 1;
+    text-align: right;
+}
+
+.head-media__arrow {
+    color: #ED2590;
+}
+
+.user {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.user__banner {
+    //background: #ff99d0;
+    //background: linear-gradient(to bottom, #ff99d0, #ed2590);
+    background-size: contain;
+    border-radius: 20px 20px 0 0;
+    height: 105px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.user-photo {
+    border: 3px solid #ED2590;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 3px;
+    position: relative;
+}
+
+.user-info {
+    border-bottom: 1px solid #D9E6F7;
+    padding-bottom: 20px;
+}
+
+.user-photo__img {
+    display: block;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+}
+
+.user-nav {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.user-nav > li {
+    margin-right: 10px;
+}
+
+.user-nav > li > a {
+    color: #6B6B6B;
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-nav > li > a:hover {
+    color: #ED2590;        
+}
+
+.user-nav > li > a.active {
+    color: #ED2590;        
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.breadcrumb-nav {
+    list-style: none;
+    padding: 0;      
+    margin: 0;       
+    display: flex;   
+}
+
+.breadcrumb-nav > li {
+    margin-right: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.profile__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.profile__nav {
+    display: flex;
+    align-items: center;
+}
+
+.profile__about {
+    background: #eff4fc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.followers-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.followers-head__title {
+    font-size: 16px;
+}
+
+.followers-body .col {
+    padding: 10px;
+}
+
+.followers-item {
+    text-align: center;
+}
+
+.followers-item__photo {
+    border: 1px solid #D9E6F7;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.followers-item__photo > img {
+    display: block;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+}
+
+.followers-item__name {
+    font-weight: normal;
+    word-break: break-all;
+}
+
+.feed {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feed__title {
+    margin-bottom: 10px;
+}
+
+.feed-media {
+    border-bottom: 1px solid #D9E6F7;
+    display: flex;
+    align-items: top;
+    padding: 20px 0;
+}
+
+.feed-media .feed-media {
+    border-bottom: none;
+    padding: 5px 0 0;
+}
+
+.feed-media__img {
+    display: block;
+    margin-right: 10px;
+    height: 35px;
+    object-fit: cover;
+    width: 35px;
+}
+
+.feed-media__body {
+    word-break: break-all;
+    width: 100%;
+}
+
+.feed-media__body-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed-media__body video {
+    background: #000;
+    border: 1px solid #D9E6F7;
+    border-radius: 20px;
+    height: 315px;
+    width: 100%;
+}
+
+.feed-media__body iframe {
+    border: 1px solid #D9E6F7;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.feed-media__body img {
+    border: 1px solid #D9E6F7;
+    border-radius: 20px;
+}
+
+.btn {
+    background: #ED2590;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    font-family: "Heebo", system-ui;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #d32381;
+    color: #fff;
+}
+
+.info .row {
+    padding-bottom: 15px;
+}
+
+.info .row:last-child {
+    padding-bottom: 0;
+}
+
+.info__title {
+    font-weight: bold;
+}
