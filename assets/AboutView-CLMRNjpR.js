@@ -1,1 +1,0 @@
-import{d as o,o as t,c as s,b as a}from"./index-DTz5tlXi.js";const n={class:"about"},p=o({__name:"AboutView",setup(r){return(c,e)=>(t(),s("div",n,e[0]||(e[0]=[a("h1",null,"This is an about page",-1)])))}});export{p as default};
